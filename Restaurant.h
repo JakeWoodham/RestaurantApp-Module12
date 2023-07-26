@@ -13,13 +13,13 @@ class Restaurant
 public:
     //Constructors
     Restaurant();
-    Restaurant(string nm);
-    Restaurant(string nm, string typ, string priceRng, double avgRating, int numReviews);
+    Restaurant(const string& nm);
+
 
     //Mutators
-    void setName(string nm);
-    void setType(string typ);
-    void setPriceRange(string priceRng);
+    void setName(const string& nm);
+    void setType(const string& typ);
+    void setPriceRange(const string& priceRng);
     void setAverageRating(double avgRtg);
     void setNumberOfReviews(int numReviews);
 
@@ -31,7 +31,7 @@ public:
     int getNumberOfReviews() const;
 
     //member functions
-    string computePriceRangeDescription(const string&);
+    string computePriceRangeDescription(const string&) const;
 
 
 
