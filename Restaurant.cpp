@@ -72,5 +72,7 @@ string Restaurant::computePriceRangeDescription(string pR) const
         return "Avg. expensive";
     else if (pR == "$$$$")
         return "Most expensive";
+    else
+        return "Invalid Price";
 }
 
