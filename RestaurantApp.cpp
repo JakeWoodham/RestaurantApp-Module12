@@ -11,6 +11,7 @@
 #include <iostream>
 #include "Restaurant.h"
 #include <string>
+#include <iomanip>
 using namespace std;
 
 void displayRestaurantInstance(const Restaurant& restaurant);
@@ -54,11 +55,13 @@ int main()
 
 void displayRestaurantInstance(const Restaurant& restaurant)
 {
+    cout << fixed << showpoint << setprecision(2);
     cout << endl;
     cout << "Name:" << restaurant.getName() << endl;
     cout << "Type:" << restaurant.getType() << endl;
     cout << "Price Range:" << restaurant.getPriceRange() << endl;
     cout << "Avg Ratings:" << restaurant.getAverageRating() << endl;
     cout << "Number Of Reviews:" << restaurant.getNumberOfReviews() << endl;
-    cout << "Price Range Description:" << restaurant.computePriceRangeDescription(restaurant.getPriceRange()) << endl;
+    cout << "Price Range Description:"
+    << restaurant.computePriceRangeDescription(restaurant.getPriceRange()) << endl;
 }
