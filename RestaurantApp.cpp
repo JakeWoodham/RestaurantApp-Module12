@@ -11,15 +11,14 @@
 #include <iostream>
 #include "Restaurant.h"
 #include <string>
-
+using namespace std;
 
 void displayRestaurantInstance(const Restaurant& restaurant);
 
-using namespace std;
-
-
-int main() {
-
+int main()
+{
+    //Create instances of restaurant class
+    //using mutators to set the values of the member variables
     Restaurant restaurant1("BettyLou'sSeafoodandGrill");
     restaurant1.setType("Seafood,VegetarianFriendly,VeganOptions");
     restaurant1.setPriceRange("$$-$$$");

@@ -1,7 +1,6 @@
 //
-// Created by jake on 7/25/23.
+// Created by Jacob Woodham on 7/25/23.
 //
-
 #include "Restaurant.h"
 
 //Constructors
