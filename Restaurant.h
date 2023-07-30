@@ -10,16 +10,24 @@ using namespace std;
 
 class Restaurant
 {
+private:
+    //member variables
+    string name;
+    string type;
+    string priceRange;
+    double averageRating;
+    int numberOfReviews;
+
 public:
     //Constructors
-    Restaurant();
-    Restaurant(const string& nm);
+    Restaurant(); //Default Constructor
+    Restaurant(string nm); //Constructor with name parameter
 
 
     //Mutators
-    void setName(const string& nm);
-    void setType(const string& typ);
-    void setPriceRange(const string& priceRng);
+    void setName(string nm);
+    void setType(string typ);
+    void setPriceRange(string priceRng);
     void setAverageRating(double avgRtg);
     void setNumberOfReviews(int numReviews);
 
@@ -31,18 +39,7 @@ public:
     int getNumberOfReviews() const;
 
     //member functions
-    string computePriceRangeDescription(const string&) const;
-
-
-
-private:
-    //member variables
-    string name;
-    string type;
-    string priceRange;
-    double averageRating;
-    int numberOfReviews;
-
+    string computePriceRangeDescription(string pR) const;
 };
 
 
